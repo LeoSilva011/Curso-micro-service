@@ -1,0 +1,5 @@
+package com.msclientes.api.application.service;
+
+public class ClienteService {
+
+}

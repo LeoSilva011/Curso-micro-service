@@ -1,0 +1,28 @@
+package com.mscartoes.api.application;
+
+import org.springframework.stereotype.Service;
+
+import com.mscartoes.api.domain.Cartao;
+import com.mscartoes.api.infra.repository.CartaoRepository;
+
+@Service
+public class CartaoService {
+	
+	private final CartaoRepository repository;
+	
+	
+	
+	
+	public CartaoService(CartaoRepository repository) {
+		this.repository = repository;
+	}
+
+
+
+
+	public Cartao save(Cartao cartao) {
+		return repository.save(null);
+	}
+	
+
+}

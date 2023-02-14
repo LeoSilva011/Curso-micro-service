@@ -1,0 +1,12 @@
+package com.msavaliadorcredito.api.application;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class AvaliadorCreditoService {
+	
+	public SituacaoCliente obterSituacaoCliente(String cpf) {
+		//obter dados do cliente da api -- mscliente
+		//obter cartoes do cliente -mscartoes
+	}
+}

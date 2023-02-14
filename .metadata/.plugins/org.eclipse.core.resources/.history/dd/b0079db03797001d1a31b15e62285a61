@@ -1,0 +1,5 @@
+package com.msavaliadorcredito.api.application;
+
+public class AvaliadorCreditoService {
+
+}

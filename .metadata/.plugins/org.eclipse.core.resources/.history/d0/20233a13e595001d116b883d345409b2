@@ -1,0 +1,5 @@
+package com.mscartoes.api.application;
+
+public class CartaoService {
+
+}

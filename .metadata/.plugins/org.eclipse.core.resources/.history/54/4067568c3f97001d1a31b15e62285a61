@@ -1,0 +1,33 @@
+package com.msavaliadorcredito.api.application;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.msavaliadorcredito.api.domain.model.DadosCliente;
+import com.msavaliadorcredito.api.domain.model.SituacaoCliente;
+import com.msavaliadorcredito.api.infra.ClienteResourceClient;
+
+@Service
+public class AvaliadorCreditoService {
+	
+	
+	private final ClienteResourceClient clientResourceClient;
+	
+	
+	
+	public AvaliadorCreditoService(ClienteResourceClient clientResourceClient) {
+		super();
+		this.clientResourceClient = clientResourceClient;
+	}
+
+
+
+	public SituacaoCliente obterSituacaoCliente(String cpf) {
+		//obter dados do cliente da api -- mscliente
+		//obter cartoes do cliente -mscartoes
+		
+		
+		ResponseEntity<DadosCliente> dadosClienteResponse = clientResourceClient.dadosCliente(cpf);
+		
+	}
+}

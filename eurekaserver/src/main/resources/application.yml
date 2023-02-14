@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: eurekaserver
+  security:
+    basic:
+      enable: true
+    user:
+      name: cursoms-eureka-user
+      password: 12345678 # a senha deve ser forte ou se uma variavel de ambiente
+
+    
+server:
+  port: 8761
+  
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false

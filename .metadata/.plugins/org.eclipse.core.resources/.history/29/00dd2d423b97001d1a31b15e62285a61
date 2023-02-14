@@ -1,0 +1,8 @@
+package com.msavaliadorcredito.api.infra;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(value = "msclientes", path = "/clientes")
+public interface ClienteResourceClient {
+
+}

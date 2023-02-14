@@ -1,0 +1,16 @@
+package com.msclientes.api.application;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/clientes")
+public class ClienteController {
+	
+	public String status() {
+		return "OK";
+	}
+	
+	
+
+}

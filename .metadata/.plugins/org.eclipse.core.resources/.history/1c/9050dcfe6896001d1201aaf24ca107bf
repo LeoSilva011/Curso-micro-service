@@ -1,0 +1,26 @@
+package com.mscartoes.api.application;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.mscartoes.api.application.representation.CartaoSaveRequest;
+
+@RestController
+@RequestMapping("/cartoes")
+public class CartaoController {
+
+	
+	@GetMapping
+	public String status() {
+		return "OK";
+	}
+	
+	
+	public ResponseEntity cadastra( @RequestBody CartaoSaveRequest request ) {
+		
+	}
+	
+}

@@ -1,0 +1,5 @@
+package com.mscartoes.api.domain;
+
+public class ClienteCartao {
+
+}

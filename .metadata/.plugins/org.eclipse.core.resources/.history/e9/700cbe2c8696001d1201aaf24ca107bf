@@ -1,0 +1,19 @@
+package com.mscartoes.api.application;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.mscartoes.api.infra.repository.ClienteCartaoRepository;
+
+@Service
+public class ClienteCartaoService {
+
+	private ClienteCartaoRepository repository;
+	
+	public List<ClienteCartaoRepository> listaCartoesbyCpf(String cpf){
+		return repository.findByCpf(cpf);
+		
+	}
+	
+}

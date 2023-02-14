@@ -1,0 +1,5 @@
+package com.msavaliadorcredito.api.infra;
+
+public interface ClienteResourceClient {
+
+}
